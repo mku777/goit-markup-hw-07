@@ -345,24 +345,24 @@ section .hero {
   padding-top: 0px;
 }
 
-.activities {
+.actions__list {
   display: flex;
 }
 
-.activities .item+.item {
+.actions__item+.actions__item {
   margin-left: 30px;
 }
 
-.activities .item {
+.actions__item {
   position: relative;
   display: block;
 }
 
-.activities img {
+.actions_img {
   display: block;
 }
 
-.avtivities-text {
+.service {
   margin: 0 0;
   display: flex;
   align-items: center;
@@ -374,7 +374,7 @@ section .hero {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.avtivities-text .text {
+.service__text {
   margin: 0;
   font-weight: 700;
   font-size: 14px;
