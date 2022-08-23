@@ -80,6 +80,7 @@ ul {
 .header__page {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .navigation {
@@ -187,8 +188,6 @@ ul {
 
 
 
-/* Cтили для index.html */
-
 /* Hero */
 
 
@@ -270,11 +269,6 @@ ul {
 /* Sections */
 
 
-header {
-  border-bottom: 1px solid #ececec;
-}
-
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -299,8 +293,40 @@ section .hero {
 
 /* Features */
 
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
 
-.features-svg {
+.features__list-item {
+  width: 270px;
+}
+
+.features__list-item:not( :last-child) {
+  margin-right: 30px;
+}
+
+.features__list-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features__list-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.features__svg {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -312,48 +338,6 @@ section .hero {
   margin-bottom: 30px;
 }
 
-
-.svg-item {
-  text-align: center;
-}
-
-.section .features {
-  padding-bottom: 0px;
-}
-
-
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-}
-
-.features-list .item:not( :last-child) {
-  margin-right: 30px;
-}
-
-.features-list .item {
-  width: 270px;
-}
-
-.features-list .title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.features-list .text {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
 
 /* Activities */
 
