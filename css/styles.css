@@ -65,17 +65,16 @@ ul {
   text-decoration: none;
 }
 
-.logo__accent {
+.logo--accent {
   color: var(--accent-color);
 }
 
-.logo .fter {
+.logo--white {
   color: var(--primary-bg-color);
 }
 
-.logo-footer-back {
-  background-color: var(--secondary-bg-color);
-}
+
+/* HEADER */
 
 .header__page {
   display: flex;
