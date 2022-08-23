@@ -395,11 +395,9 @@ section .hero {
   flex-wrap: wrap;
 }
 
-
 .team__item:nth-child(4n) {
   margin-right: 0;
 }
-
 
 .team__item {
   margin-right: 30px;
@@ -412,12 +410,10 @@ section .hero {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-
 .worker {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 
 .worker__title {
   color: #212121;
@@ -429,7 +425,6 @@ section .hero {
   margin-top: 0;
   margin-bottom: 10px;
 }
-
 
 .worker_text {
   color: #757575;
@@ -446,21 +441,18 @@ section .hero {
 }
 
 
+/* TEAM SOCIAL LINKS */
 
-
-/* Our team social link */
-
-.link-icon use {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .social-link-list {
   display: block;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social-link-list li+li {
+  margin-left: 10px;
 }
 
 .social-media-link {
@@ -495,21 +487,27 @@ section .hero {
   justify-content: center;
 }
 
-.social-link-list li+li {
-  margin-left: 10px;
+.link-icon use {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* Постоянные клиенты */
 
 
 
-.client-company {
+.client__list {
   display: flex;
   align-items: center;
 }
 
+.client__item + .client__item {
+  margin-left: 30px;
+}
 
-.client-button {
+.client__link {
   display: block;
   align-items: center;
   width: 170px;
@@ -528,31 +526,29 @@ section .hero {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-button svg {
+.client__link:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.client__link:focus {
+  color: var(--accent-color);
+  outline: 1px solid var(--accent-color);
+  border: none;
+}
+
+.client__icon {
+  fill: currentColor;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.client-company li+li {
-  margin-left: 30px;
-}
 
-.client-button:hover {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
 
-.client-button:focus {
-  color: var(--accent-color);
-  outline: 1px solid var(--accent-color);
-  border: none;
-}
 
-.adress-nav-flex {
-  margin-top: 20px;
-}
+
 
 /* Footer */
 
