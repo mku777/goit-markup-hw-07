@@ -556,17 +556,19 @@ section .hero {
 
 /* Footer */
 
-.icon-svg {
-  fill: currentColor;
+
+.footer__container {
+  display: flex;
 }
 
 .footer {
+  
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.adress-nav .link {
+.adress__link {
   color: #ffffff;
   background-color: var(--secondary-bg-color);
   font-style: normal;
@@ -581,35 +583,29 @@ section .hero {
 }
 
 
-.adress-nav .rgb-color {
+.adress__link--rgbcolor {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-nav .link:hover,
-.adress-nav .link:focus,
-.adress-nav .rgb-color:hover,
-.adress-nav .rgb-color:focus {
+.adress__link:hover,
+.adress__link:focus,
+.adress__link--rgbcolor:hover,
+.adress__link--rgbcolor:focus {
   color: var(--accent-color);
 }
 
-
-
-.adress-nav-flex .item {
+.adress__item {
   margin-bottom: 9px;
 }
 
-.adress-nav-flex .tel {
+.adress__item--mobile {
   margin-bottom: 0px;
 }
 
-.footer .container {
-  display: flex;
-}
 
 .footer-social {
   margin-left: 70px;
 }
-
 
 
 /* footer Title */
