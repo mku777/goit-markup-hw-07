@@ -603,14 +603,14 @@ section .hero {
 }
 
 
-.footer-social {
+.footer__join {
   margin-left: 70px;
 }
 
 
 /* footer Title */
 
-.title-footer {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -623,9 +623,7 @@ section .hero {
 /* Footer social links */
 
 
-.iconsvg {
-  fill: currentColor;
-}
+
 
 .footer-social-links {
   display: flex;
@@ -669,6 +667,12 @@ section .hero {
   align-items: center;
   justify-content: center;
 }
+
+
+.iconsvg {
+    fill: currentColor;
+  }
+
 
 /* Portfolio Page */
 
