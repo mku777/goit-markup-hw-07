@@ -760,6 +760,7 @@ section .hero {
 }
 
 .projects__picture {
+  display: block;
   position: relative;
   overflow: hidden;
 }
