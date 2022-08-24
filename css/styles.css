@@ -102,7 +102,7 @@ header {
 .header__page {
   display: flex;
   align-items: center;
-  
+
 }
 
 .navigation {
@@ -169,7 +169,7 @@ header {
   justify-content: center;
 }
 
-.auth-nav .auth-nav__item + .auth-nav__item {
+.auth-nav .auth-nav__item+.auth-nav__item {
   margin-left: 30px;
 }
 
@@ -461,7 +461,7 @@ header {
   align-items: center;
 }
 
-.client__item + .client__item {
+.client__item+.client__item {
   margin-left: 30px;
 }
 
@@ -516,7 +516,7 @@ header {
 }
 
 .footer {
-  
+
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -585,7 +585,7 @@ header {
   justify-content: center;
 }
 
-.social__list  .social__item+ .social__item {
+.social__list .social__item+.social__item {
   margin-left: 10px;
 }
 
@@ -630,9 +630,9 @@ header {
 
 
 
- /* Footer social links  */
+/* Footer social links  */
 
- .social__link-footer {
+.social__link-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -647,10 +647,10 @@ header {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- }
+}
 
 
- .social__link-footer:hover {
+.social__link-footer:hover {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
@@ -666,12 +666,12 @@ header {
   justify-content: center;
   margin-bottom: 50px;
 }
- 
+
 
 .project-buttons__item:not( :last-child) {
-    margin-right: 8px;
-  }
-  
+  margin-right: 8px;
+}
+
 
 
 .project-buttons__button {
@@ -870,20 +870,20 @@ header {
   margin-right: 12px;
   padding: 15px 16px;
   font-size: 16px;
-line-height: 1.25;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-color: var(--primary-bg-color);
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
 }
 
 .footer__mail::placeholder {
   font-size: 16px;
-line-height: 1.25;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__mail:focus {
@@ -938,7 +938,7 @@ textarea {
   resize: none;
 }
 
-.modal__form{
+.modal__form {
   padding: 40px;
 
 }
@@ -1021,8 +1021,8 @@ textarea {
 }
 
 
-.modal__input:focus + .modal__icon,
-.modal__input:hover + .modal__icon {
+.modal__input:focus+.modal__icon,
+.modal__input:hover+.modal__icon {
   fill: var(--accent-color);
 }
 
