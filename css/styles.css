@@ -623,19 +623,17 @@ section .hero {
 /* Footer social links */
 
 
-
-
-.footer-social-links {
+.social__list--footer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footer-social-links li+li {
+.social__list--footer .social__item + .social__item {
   margin-left: 10px;
 }
 
-.social-link-footer {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -653,23 +651,23 @@ section .hero {
 }
 
 
-.social-link-footer:hover {
+.social__link:hover {
   background-color: var(--accent-color);
 }
 
-.social-link-footer:focus {
+.social__link:focus {
   background-color: var(--accent-color);
   outline: 0px;
 }
 
-.link-icon-footer {
+.social__foter {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 
-.iconsvg {
+.social__icon{
     fill: currentColor;
   }
 
