@@ -862,7 +862,7 @@ section .hero {
 
 /* Footer forms */
 
-.title-footer.mail {
+.footer__title-mail {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -874,7 +874,7 @@ section .hero {
 }
 
 
-.footer-mail {
+.footer__mail {
   width: 358px;
   height: 50px;
   border: none;
@@ -886,9 +886,12 @@ section .hero {
   padding: 15px 16px;
 }
 
+.footer__form {
+  display: flex;
+  margin-left: 93px;
+}
 
-
-.footer-sub-button {
+.footer__button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -911,19 +914,16 @@ section .hero {
   cursor: pointer;
 }
 
-.footer-sub-button:hover,
-.footer-sub-button:focus {
+.footer__button:hover,
+.footer__button:focus {
   background-color: #188CE8;
 }
 
-.footer-sub-button svg {
+.footer_icon {
   margin-left: 10px;
 }
 
-.fter-button {
-  display: flex;
-  margin-left: 93px;
-}
+
 
 
 
