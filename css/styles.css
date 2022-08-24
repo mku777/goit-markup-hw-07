@@ -628,21 +628,7 @@ section .hero {
 
  /* Footer social links  */
 
- .iconsvg {
-  fill: currentColor;
-}
-
-.footer-social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-social-links li+li {
-  margin-left: 10px;
-}
-
-.social-link-footer {
+ .social__link-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -657,22 +643,12 @@ section .hero {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+ }
 
 
-.social-link-footer:hover {
+ .social__link-footer:hover {
   background-color: var(--accent-color);
-}
-
-.social-link-footer:focus {
-  background-color: var(--accent-color);
-  outline: 0px;
-}
-
-.link-icon-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: var(--primary-bg-color);
 }
 
 
