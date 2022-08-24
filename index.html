@@ -86,25 +86,24 @@
               </svg>
             </div>
 
-            <label for="comment" class="form-label">Коментар</label>
-            <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+            <label for="comment" class="modal__label">Коментар</label>
+            <textarea class="modal__comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
 
-            <div class="policy-options">
-
-              <label class="checkbox-label">
-                <input type="checkbox" name="policy-checkbox" class="checkbox">
-                <span class="checkbox-icon"></span>
+            <div class="checkbox">
+              <label class="checkbox__label">
+                <input type="checkbox" name="policy-checkbox" class="checkbox__input">
+                <span class="checkbox__icon"></span>
                 <span>Погоджуюся з розсилкою та приймаю </span>
 
-                <a href=""><span class="policy-accent"> Умови договору</span></a>
+                <a href=""><span class="checkbox__policy-accent"> Умови договору</span></a>
               </label>
             </div>
-            <button type="submit" class="modal-submit-button">Відправити</button>
+            <button type="submit" class="modal__submit-button">Відправити</button>
 
           </form>
 
-          <button data-modal-close type="button" class="modal-close-btn">
-            <svg class="icon" width="11" height="11">
+          <button data-modal-close type="button" class="modal__close-button">
+            <svg class="modal__icon--close" width="11" height="11">
               <use href="./images/icons.svg#close-modal-icn"> </use>
             </svg>
           </button>
