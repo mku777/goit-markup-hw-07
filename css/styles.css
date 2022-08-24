@@ -574,14 +574,18 @@ section .hero {
 
 
 
-.social-link-list {
+.social__list {
   display: block;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-media-link {
+.social__list  .social__item+ .social__item {
+  margin-left: 10px;
+}
+
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -596,32 +600,30 @@ section .hero {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-media-link:hover {
+.social__link:hover {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
 
-.social-media-link:focus {
+.social__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   outline: 1px var(--accent-color);
 }
 
-.link-icon {
+.social__icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-link-list li+li {
-  margin-left: 10px;
-}
-
-.link-icon use {
+.social__svg {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
 }
+
 
 
  /* Footer social links  */
