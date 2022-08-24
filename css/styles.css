@@ -95,10 +95,14 @@ section .hero {
 
 /* HEADER */
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__page {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  
 }
 
 .navigation {
@@ -870,7 +874,7 @@ line-height: 1.25;
 display: flex;
 align-items: center;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+color: var(--primary-bg-color);
 }
 
 .footer__mail::placeholder {
@@ -932,7 +936,6 @@ color: rgba(255, 255, 255, 0.6);
 
 textarea {
   resize: none;
- 
 }
 
 .modal__form{
