@@ -217,8 +217,7 @@ ul {
 }
 
 
-
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--primary-bg-color);
@@ -230,12 +229,9 @@ ul {
   padding-top: 200px;
 }
 
-.hero-button {
-  padding-bottom: 200px;
-}
 
 /* Button */
-.button {
+.hero__button {
   text-align: center;
   border-radius: 4px;
   border: 0;
@@ -253,22 +249,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--primary-bg-color);
-  padding: 0;
-  margin: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
 
-}
 
 /* Sections */
 
@@ -951,11 +932,11 @@ textarea {
   resize: none;
 }
 
-.form {
+.modal__form{
   padding: 40px;
 }
 
-.modal p {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -966,7 +947,7 @@ textarea {
   margin-top: 0;
 }
 
-.form-label {
+.modal__label {
   display: block;
   text-align: left;
   font-size: 12px;
@@ -976,11 +957,11 @@ textarea {
   margin-bottom: 4px;
 }
 
-.form-field {
+.modal__field {
   position: relative;
 }
 
-.form-input {
+.modal__input {
 
   display: block;
   width: 448px;
@@ -993,13 +974,13 @@ textarea {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover,
-.form-input:focus {
+.modal__input:hover,
+.modal__input:focus {
   border-color: var(--accent-color);
   outline-color: var(--accent-color);
 }
 
-.modal-icon {
+.modal__icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1009,13 +990,13 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:focus,
-.modal-icon:hover {
+.modal__icon:focus,
+.modal__icon:hover {
   fill: var(--accent-color);
 }
 
-.form-input:focus+.modal-icon,
-.form-input:hover+.modal-icon {
+.modal__input:focus + .modal__icon,
+.modal__input:hover + .modal__icon {
   fill: var(--accent-color);
 }
 
@@ -1124,4 +1105,21 @@ a {
   background-image: url('../images/check.svg');
   background-size: contain;
   background-origin: border-box;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-bg-color);
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
 }
