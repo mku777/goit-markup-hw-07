@@ -660,7 +660,7 @@ section .hero {
   outline: 0px;
 }
 
-.social__foter {
+.social__footer {
   display: flex;
   align-items: center;
   justify-content: center;
