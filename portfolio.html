@@ -210,59 +210,59 @@
   </main>
   <!--Футер-->
   <footer class="footer">
-    <div class="container">
-      <div class="logo-footer-back">
-        <a href="" class="logo"><span class="logo-accent">Web</span><span class="logo-accent fter">Studio</span></a>
-        <address class="adress-nav foot">
-          <ul class="adress-nav-flex">
-            <li class="item">
-              <a class="link" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі
+    <div class="container footer__container">
+      <div>
+        <a href="" class="logo logo__footer"><span class="logo--accent">Web</span><span class="logo--white">Studio</span></a>
+        <address class="adress">
+          <ul class="adress__list">
+            <li class="adress__item">
+              <a class="adress__link" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі
                 Українки, 26</a>
             </li>
-            <li class="item">
-              <a class="link rgb-color" href="mailto:info@devstudio.com">info@example.com</a>
+            <li class="adress__item">
+              <a class="adress__link adress__link--rgbcolor" href="mailto:info@devstudio.com">info@example.com</a>
             </li>
-            <li class="item tel">
-              <a class="link rgb-color" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="adress__item adress__item--mobile">
+              <a class="adress__link adress__link--rgbcolor" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>
       </div>
-      <div class="footer-social">
-        <h2 class="title-footer">Приєднуйтесь</h2>
-        <ul class="footer-social-links">
-          <li class="item-list">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" class="social-link-footer">
-              <div class="link-icon-footer">
+      <div class="footer__join">
+        <h2 class="footer__title">Приєднуйтесь</h2>
+        <ul class="social__list social__list--footer">
+          <li class="social__item">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" class="social__link">
+              <div class="social social__footer">
                 <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram" class="iconsvg"></use>
+                  <use href="./images/icons.svg#icon-instagram" class="social__icon"></use>
                 </svg>
               </div>
             </a>
           </li>
-          <li class="item-list"> <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"
-              class="social-link-footer">
-              <div class="link-icon-footer">
+          <li class="social__item"> <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"
+              class="social__link">
+              <div class="social social__footer">
                 <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter" class="iconsvg"></use>
+                  <use href="./images/icons.svg#icon-twitter" class="social__icon"></use>
                 </svg>
               </div>
             </a>
           </li>
-          <li class="item-list"> <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"
-              class="social-link-footer">
-              <div class="link-icon">
+          <li class="social__item"> <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"
+              class="social__link">
+              <div class="social social__footer">
                 <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook" class="iconsvg"></use>
+                  <use href="./images/icons.svg#icon-facebook" class="social__icon"></use>
                 </svg>
               </div>
             </a>
           </li>
-          <li class="item-list"> <a href="https://www.linkedin.com/" target="_blank" aria-label="Linkedin"
-              class="social-link-footer">
-              <div class="link-icon">
+          <li class="social__item"> <a href="https://www.linkedin.com/" target="_blank" aria-label="Linkedin"
+              class="social__link">
+              <div class="social social__footer">
                 <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin" class="iconsvg"></use>
+                  <use href="./images/icons.svg#icon-linkedin" class="social__icon"></use>
                 </svg>
               </div>
             </a>
@@ -272,15 +272,15 @@
       </div>
       <div class="ftr-mail-form">
         <div>
-          <h2 class="title-footer mail">Підпишіться на розсилку</h2>
+          <h2 class="footer__title-mail">Підпишіться на розсилку</h2>
         </div>
         <form autocomplete="off">
-          <div class="fter-button">
+          <div class="footer__form">
             <label>
-              <input class="footer-mail" type="email" name="mail" id="mail" placeholder="E-mail">
+              <input class="footer__mail" type="email" name="mail" id="mail" placeholder="E-mail">
             </label>
-            <button class="footer-sub-button" type="submit">Підписатися
-              <svg width="24" height="24">
+            <button class="footer__button" type="submit">Підписатися
+              <svg class="footer_icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -288,6 +288,9 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
