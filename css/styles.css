@@ -573,15 +573,12 @@ section .hero {
 /* TEAM SOCIAL LINKS */
 
 
-/* .social-link-list {
+
+.social-link-list {
   display: block;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.social-link-list li+li {
-  margin-left: 10px;
 }
 
 .social-media-link {
@@ -616,43 +613,34 @@ section .hero {
   justify-content: center;
 }
 
+.social-link-list li+li {
+  margin-left: 10px;
+}
+
 .link-icon use {
-  fill: currentColor;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
-/* Footer social links */
 
-/* .social__list {
+ /* Footer social links  */
+
+ .iconsvg {
+  fill: currentColor;
+}
+
+.footer-social-links {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social__list .social__item + .social__item {
+.footer-social-links li+li {
   margin-left: 10px;
 }
 
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.social__list--footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social__list--footer .social__item + .social__item {
-  margin-left: 10px;
-}
-
-.social__link {
+.social-link-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -670,64 +658,21 @@ section .hero {
 }
 
 
-.social__link:hover {
+.social-link-footer:hover {
   background-color: var(--accent-color);
 }
 
-.social__link:focus {
+.social-link-footer:focus {
   background-color: var(--accent-color);
   outline: 0px;
 }
-/* 
-.social__footer {
+
+.link-icon-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
 
-
-.social__icon{
-    fill: currentColor;
-  } */
-
-  .social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: #afb1b8;
-    transition-property: background-color, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .social:hover {
-    color: #ffffff;
-    background-color: #2196f3;
-  }
-  .social__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  .social__list .social__item + .social__item {
-    margin-left: 10px;
-  }
-  .social__link:focus .social {
-    color: #ffffff;
-    background-color: #2196f3;
-  }
-  .social__icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    fill: currentColor;
-  }
 
 
 /* Portfolio Page */
