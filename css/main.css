@@ -882,9 +882,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.project-buttons__button:hover,
-.project-buttons__button:focus {
+.project-buttons__button:hover, .project-buttons__button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   cursor: pointer;
