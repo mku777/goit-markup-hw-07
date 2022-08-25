@@ -22,12 +22,12 @@ header {
     margin-left: 93px;
     padding-top: 32px;
     padding-bottom: 32px;
+    &__item:not( :last-child) {
+      margin-right: 50px;
+    }
   }
   
-  .site-navigation__item:not( :last-child) {
-    margin-right: 50px;
-  }
-  
+ 
   .site-navigation__link {
     color: var(--title-text-color);
     font-weight: 500;
@@ -38,31 +38,33 @@ header {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .site-navigation__link:hover,
-  .site-navigation__link:focus {
+    &:hover,
+  &:focus {
     color: var(--accent-color);
   }
+  }
+  
+  
   
   .site-navigation__link--active {
     position: relative;
     color: var(--accent-color);
+    &::after {
+      position: absolute;
+      top: 46px;
+      left: 0;
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+      transform: scaleX(1.09);
+    }
+    
   }
   
-  .site-navigation__link--active::after {
-    position: absolute;
-    top: 46px;
-    left: 0;
-    content: " ";
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-    transform: scaleX(1.09);
-  }
-  
+
   
   /* AUTH-NAVIGATION */
   
@@ -91,12 +93,12 @@ header {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .auth-nav__link:hover,
-  .auth-nav__link:focus {
+    &:hover,
+  &:focus {
     color: var(--accent-color);
   }
+  }
+  
   
   .auth-nav__icon {
     margin-right: 10px;
@@ -104,10 +106,11 @@ header {
     transition-property: currentColorr;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: currentColor;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
   
-  .auth-nav__icon:hover,
-  .auth-nav__icon:focus {
-    fill: currentColor;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+ 
