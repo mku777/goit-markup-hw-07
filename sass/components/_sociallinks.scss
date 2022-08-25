@@ -22,17 +22,16 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .social__link:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-bg-color);
-  }
-  
-  .social__link:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-bg-color);
-    outline: 1px var(--accent-color);
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--primary-bg-color);
+    }
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--primary-bg-color);
+      outline: 1px var(--accent-color);
+    }
   }
   
   .social__icon {
@@ -63,10 +62,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--primary-bg-color);
+    }
   }
   
   
-  .social__link-footer:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-bg-color);
-  }

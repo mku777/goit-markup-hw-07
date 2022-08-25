@@ -809,12 +809,10 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .social__link:hover {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
-
 .social__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
@@ -849,7 +847,6 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .social__link-footer:hover {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
