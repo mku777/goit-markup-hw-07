@@ -1,16 +1,17 @@
 .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
   
-  .features__list-item {
+    &-item:not( :last-child) {
+  margin-right: 30px;
+}
+}
+  
+.features__list-item {
     width: 270px;
   }
-  
-  .features__list-item:not( :last-child) {
-    margin-right: 30px;
-  }
+
   
   .features__list-title {
     margin-top: 0;
